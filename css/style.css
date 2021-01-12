@@ -1,0 +1,47 @@
+main {
+  border: 1px solid pink;
+  display: grid;
+  max-width: 1600px;
+  position: relative;
+  margin: auto;
+  grid-template-areas: "header summary"
+                      "info experience"
+                      "info education";
+  grid-template-rows: 1fr 3fr 3fr;
+  grid-template-columns: 1fr 3fr;
+}
+
+header {
+  grid-area: header;
+  color: white;
+  background-color: #839788;
+}
+
+.summary {
+  grid-area: summary;
+  background-color: #BAA898;
+
+}
+
+.info {
+  grid-area: info;
+  color: white;
+  background-color: #839788;
+}
+
+.experience {
+  grid-area: experience;
+  background-color: #EEE0CB;
+
+}
+.education {
+  grid-area: education;
+  background-color: #EEE0CB;
+
+}
+
+.description {
+  justify-items: center;
+  justify-content: space-around;
+}
+
