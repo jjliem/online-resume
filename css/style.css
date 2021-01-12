@@ -14,33 +14,33 @@ main {
 header {
   grid-area: header;
   color: white;
-  background-color: #839788;
+  background-color: #659157;
 }
 
 .summary {
   grid-area: summary;
-  background-color: #BAA898;
+  background-color: white;
 
 }
 
 .info {
   grid-area: info;
   color: white;
-  background-color: #839788;
+  background-color: #659157;
 }
 
 .experience {
   grid-area: experience;
-  background-color: #EEE0CB;
+  background-color: white;
 
 }
 .education {
   grid-area: education;
-  background-color: #EEE0CB;
+  background-color: white;
 
 }
 
-.description {
+.education description {
   justify-items: center;
   justify-content: space-around;
 }
