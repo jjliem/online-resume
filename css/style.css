@@ -1,47 +1,78 @@
-main {
-  border: 1px solid pink;
+/* UNIVERSAL STYLING */
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #3C362A;
+
+}
+
+.container {
   display: grid;
-  max-width: 1600px;
-  position: relative;
-  margin: auto;
   grid-template-areas: "header summary"
-                      "info experience"
-                      "info education";
-  grid-template-rows: 1fr 3fr 3fr;
-  grid-template-columns: 1fr 3fr;
+                        "info section_exp"
+                        "info section_edu";
+  grid-template-columns: 1.2fr 3fr;
+  grid-template-rows: 1fr 2fr 2fr;
 }
 
 header {
   grid-area: header;
-  color: white;
-  background-color: #659157;
+  background-color: #B8C4BB;
+  padding: 2%;
 }
 
 .summary {
   grid-area: summary;
-  background-color: white;
-
+  padding: 2%;
 }
 
 .info {
   grid-area: info;
-  color: white;
-  background-color: #659157;
+  background-color: #E8F7EE;
+  padding: 2%;
 }
 
-.experience {
-  grid-area: experience;
-  background-color: white;
-
-}
-.education {
-  grid-area: education;
-  background-color: white;
-
+.edu {
+  grid-area: section_edu;
+  padding: 2%;
 }
 
-.education description {
-  justify-items: center;
-  justify-content: space-around;
+.exp {
+  grid-area: section_exp;
+  padding: 2%;
 }
 
+a {
+  color: blue;
+}
+
+.date_loc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  width: 100%;
+  font-size: .75rem;
+  color: #663F46;
+}
+
+#date {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+#loc {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  background-color: #C9D6EA;
+}
+
+img {
+  width: 100%;
+}
